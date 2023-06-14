@@ -1,0 +1,29 @@
+.nav-main{
+    background-color: #2C2C2C;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 20vh;
+    padding-bottom: 2.1rem;
+}
+
+.nav-menu .nav-menu-list, .nav-contact .nav-contact-list{
+    display: flex;
+}
+
+.nav-menu .nav-menu-list .nav-menu-list-item, .nav-contact .nav-contact-list .nav-contact-list-item{
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
+    font-size: 1.15rem;
+}
+
+.nav-menu .nav-menu-list .nav-menu-list-item a, .nav-contact .nav-contact-list .nav-contact-list-item a{  
+    color: #ABABAB;
+}
+
+.nav-menu .nav-menu-list .nav-menu-list-item a:hover, .nav-contact .nav-contact-list .nav-contact-list-item a:hover{
+    color: antiquewhite;
+}
+
+

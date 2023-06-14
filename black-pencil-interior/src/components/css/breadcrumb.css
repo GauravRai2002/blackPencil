@@ -1,0 +1,104 @@
+.breadcrumb-main {
+    background: #2C2C2C url('../../assets/back_breadcrumb.webp');
+    min-height: 100vh;
+    background-size: 85% 95%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-blend-mode: normal;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+}
+
+.breadcrumb-main::before {
+    position: absolute;
+    content: ' ';
+    height: 85%;
+    width: 35%;
+    top: 0px;
+    left: 15%;
+    background: #1A1A1A;
+    z-index: 2;
+    -webkit-box-shadow: -10px 1px 38px -8px rgba(26, 26, 26, 1);
+    -moz-box-shadow: -10px 1px 38px -8px rgba(26, 26, 26, 1);
+    box-shadow: -10px 1px 38px -8px rgba(26, 26, 26, 1);
+}
+
+.breadcrumb-main::after {
+    position: absolute;
+    content: ' ';
+    height: 70%;
+    width: 35%;
+    top: 10%;
+    left: 10%;
+    background: #3B3B3B;
+    z-index: 1;
+}
+
+.breadcrumb-main .breadcrumb-text-area , .breadcrumb-main .breadcrumb-text-area .breadcrumb-text-area-heading, .breadcrumb-main .breadcrumb-text-area .breadcrumb-text-area-text,.breadcrumb-button{
+    position: relative;
+    z-index: 3;
+}
+
+.breadcrumb-main .breadcrumb-text-area{
+    width: 30%;
+    padding: 5rem 2.5rem;
+    margin: 1rem 7%;
+}
+
+.breadcrumb-main .breadcrumb-text-area .breadcrumb-text-area-heading{
+    font-size: 2.4rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb-main .breadcrumb-text-area .breadcrumb-text-area-text{
+    font-size: 0.8rem;
+    color: #8D9AA1;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.breadcrumb-main .breadcrumb-text-area .breadcrumb-button{
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 80%;
+    height: 4rem;
+    border-radius:5px;
+    border: none;
+    background: #FFDC25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 1px 20px -8px #ffdb25d4 ;
+    -moz-box-shadow: 0px 1px 20px -8px #ffdb25d4;
+    box-shadow: 0px 1px 20px -8px #ffdb25d4;
+    cursor: pointer;
+}
+
+.breadcrumb-main .breadcrumb-social-media{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.social-img-logo{
+    width: 25px;
+    height: 25px;
+    filter: grayscale(1) brightness(2);
+    display: block;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    box-sizing: content-box;
+    border-radius: 50%;
+    border: 2px solid rgba(128, 128, 128, 0.185);
+    transition-duration: 0.5s;
+}
+
+.social-img-logo:hover{
+    filter: grayscale(0) brightness(2) ;
+}

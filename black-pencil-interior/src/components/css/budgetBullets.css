@@ -1,0 +1,22 @@
+.budget-buttlets-main-heading{
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    margin-top: 0;
+}
+
+.budget-bullets-main-arrows{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.budget-bullets-main{
+    margin: 2rem 0;
+    margin-top: 0;
+}

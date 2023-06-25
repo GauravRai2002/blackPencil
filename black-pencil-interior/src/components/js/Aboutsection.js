@@ -7,66 +7,39 @@ import top_right from '../../assets/img-top-right.jpg'
 import top_left from '../../assets/img-top-left.jpg'
 import bottom_left from '../../assets/img-bottom-left.jpg'
 import bottom_right from '../../assets/img-bottom-right.jpg'
+import YellowButton from './YellowButton'
+import ListItemOne from './ListItemOne';
 
 function Aboutsection() {
     return (
         <>
             <div className='about-main'>
                 <div className='about-images'>
-                    <img src={top_left} alt='' className='about-images-image' id='img-about-1' />
-                    <img src={top_right} alt='' className='about-images-image' id='img-about-2' />
-                    <img src={bottom_left} alt='' className='about-images-image' id='img-about-3' />
-                    <img src={bottom_right} alt='' className='about-images-image' id='img-about-4' />
+                    <img data-aos="fade-right" data-aos-duration="800" data-aos-delay="100" src={top_left} alt='' className='about-images-image' id='img-about-1' />
+                    <img data-aos="fade-right" data-aos-duration="800" data-aos-delay="150" src={top_right} alt='' className='about-images-image' id='img-about-2' />
+                    <img data-aos="fade-right" data-aos-duration="800" data-aos-delay="200" src={bottom_left} alt='' className='about-images-image' id='img-about-3' />
+                    <img data-aos="fade-right" data-aos-duration="800" data-aos-delay="250" src={bottom_right} alt='' className='about-images-image' id='img-about-4' />
                 </div>
                 <div className='about-text'>
-                    <div className='about-text-heading'>
+                    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="50" className='about-text-heading'>
                         Why Choose Us
                     </div>
-                    <div className='about-text-subhead'>
+                    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="150" className='about-text-subhead'>
                         Besides great interior design, there are lots of reasons to choose Interia. Here are some of the most popular ones.
                     </div>
                     <div className='about-text-content'>
                         <ul className='about-text-list ul'>
-                            <li className='about-text-list-item'>
-                                <img src={one } alt='' draggable='false' />
-                                <p className='about-text-list-content'>
-                                    <div className='about-text-list-content-heading'>
-                                    Professional Team   
-                                    </div>
-                                    <div className='about-text-list-content-subtext'>
-                                    Our team includes only the best decorators and interior designers in the industry.
-                                    </div>
-                                </p>
-                            </li>
-                            <li className='about-text-list-item'>
-                                <img src={two} alt='' draggable='false' />
-                                <p className='about-text-list-content'>
-                                    <div className='about-text-list-content-heading'>
-                                    Unusual Ideas
-                                    </div>
-                                    <div className='about-text-list-content-subtext'>
-                                    Our designers generate various yet always original ideas that will surely fit your needs.
-                                    </div>
-                                </p>
-                            </li>
-                            <li className='about-text-list-item'>
-                                <img src={three } alt='' draggable='false' />
-                                <p className='about-text-list-content'>
-                                    <div className='about-text-list-content-heading'>
-                                    Made with Respect
-                                    </div>
-                                    <div className='about-text-list-content-subtext'>
-                                    All our work is built around respect to our clients, great service, and creativity.
-                                    </div>
-                                </p>
-                            </li>
+                            <ListItemOne image={one} heading="Professional Team" subhead="Our team includes only the best decorators and interior designers in the industry."/>
+                            <ListItemOne image={two} heading="Unusual Ideas" subhead="Our designers generate various yet always original ideas that will surely fit your needs."/>
+                            <ListItemOne image={three} heading="Made with Respect" subhead="All our work is built around respect to our clients, great service, and creativity."/>
                         </ul>
                     </div>
-                    <button className='about-button btn'>Get a Quote</button>
+                    <YellowButton text="Get a Quote" width="35%" height="3.5rem"/>
                 </div>
             </div>
         </>
     )
 }
+
 
 export default Aboutsection

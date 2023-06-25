@@ -5,6 +5,7 @@ import instagram from '../../assets/instagram.png'
 import youtube from '../../assets/youtube.png'
 import { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
+import YellowButton from './YellowButton'
 
 function Breadcrumb() {
 
@@ -52,9 +53,9 @@ function Breadcrumb() {
         <>
             <div className='breadcrumb-main'>
                 <div className='breadcrumb-social-media'>
-                    <a href='' className='link'><img className='social-img-logo' src={facebook} alt=''/></a>
-                    <a href='' className='link'><img className='social-img-logo' src={instagram} alt=''/></a>
-                    <a href='' className='link'><img className='social-img-logo' src={youtube} alt=''/></a>
+                    <a data-aos="fade-right" data-aos-delay="100" href='' className='link'><img className='social-img-logo' src={facebook} alt=''/></a>
+                    <a data-aos="fade-right" data-aos-delay="300" href='' className='link'><img className='social-img-logo' src={instagram} alt=''/></a>
+                    <a data-aos="fade-right" data-aos-delay="600" href='' className='link'><img className='social-img-logo' src={youtube} alt=''/></a>
                 </div>
 
                 <div className='breadcrumb-text-area'>
@@ -67,9 +68,7 @@ function Breadcrumb() {
                     Our team creates comfortable spaces for our clients. We’ve been designing your everyday life and work through great ideas since 1999.
                     </div>
 
-                    <button ref={btnref} className='breadcrumb-button btn'>
-                        Free Consultation
-                    </button>
+                    <YellowButton text="Free Consultation"/>
                 </div>
 
             </div>

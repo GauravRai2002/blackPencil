@@ -1,0 +1,31 @@
+.list-item{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.list-item img{
+    width: 100px;
+    height: 90px;
+    margin: 0 1rem;
+    margin-left: 0px;
+}
+
+.list-content-heading{
+    color: #2D2D2D;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.75rem 1rem;
+}
+
+.list-content-subtext{
+    margin: 0.75rem 1rem;
+    font-size: 0.8rem;
+    color: #545454 ;
+    line-height: 1.5rem;
+}
+
+.list-content{
+    width: 70%;
+}

@@ -8,6 +8,7 @@
     padding: 2rem;
     position: relative;
     display: flex;
+    
 }
 
 .breadcrumb-main::before {
@@ -38,6 +39,7 @@
 .breadcrumb-main .breadcrumb-text-area , .breadcrumb-main .breadcrumb-text-area .breadcrumb-text-area-heading, .breadcrumb-main .breadcrumb-text-area .breadcrumb-text-area-text,.breadcrumb-button{
     position: relative;
     z-index: 3;
+    overflow-x: visible;
 }
 
 .breadcrumb-main .breadcrumb-text-area{

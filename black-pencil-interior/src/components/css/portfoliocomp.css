@@ -1,0 +1,16 @@
+.comp-img{
+    width: 350px;
+    margin: 1rem;
+    margin-left: 0;
+}
+
+.component-heading{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #2D2D2D;
+}
+
+.component-subhead{
+    color: #9D9D9D;
+    font-size: 0.8rem;
+}

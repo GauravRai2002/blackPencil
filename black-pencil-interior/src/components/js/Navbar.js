@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/navbar.css'
+import logo from '../../assets/logo.png'
 
 function Navbar() {
   return (
@@ -13,7 +14,7 @@ function Navbar() {
           </ul>
         </div>
         <div className='nav-logo'>
-          <img src='' alt='BlakPencilInterior'/>
+          <img src={logo} alt='BlakPencilInterior'/>
         </div>
         <div className='nav-contact'>
           <ul className='nav-contact-list ul'>
